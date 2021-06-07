@@ -1,0 +1,15 @@
+$color: black;
+
+p{
+    @if ($color == black) {
+        color: black;
+    } @else {
+        color: red;
+    }
+}
+
+@for $i from 1 through 6 {
+    h#{$i}{
+        font-size: (($i * -1 ) + 6 ) rem;
+    }
+}

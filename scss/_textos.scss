@@ -1,0 +1,40 @@
+/*TEXTOS*/
+
+.logo{
+    padding: 1em;
+}
+
+h1,h2, h3{
+    font-family: 'Josefin Slab', serif;
+    
+}
+    
+h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+
+
+p { 
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    color: rgb(2, 2, 2);
+    font-family: 'Josefin Slab', serif;
+    font-size: 190%;
+    line-height: 140%;
+
+}
+
+a{
+    font-family: 'Josefin Slab', serif;
+    text-decoration: none;
+    font-size: 150%;
+    color: #fefae0;
+
+}
+
+.entry__tittle{
+    font-family: 'Kristi', cursive;
+}

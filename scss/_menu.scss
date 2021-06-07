@@ -1,0 +1,36 @@
+/*MENU*/
+
+a:hover{
+    color: #87986a;
+    font-size: 28px;
+    transition: font-size 3s ease;
+   }
+   
+   
+   nav ul li{
+       list-style: none;
+       padding: 4px;
+       color: white;
+   }
+   
+   ul ul{
+       position: absolute;
+   }
+   
+   ul li:hover ul {
+       display: block;
+    }
+   
+    .submenu{
+       display:none;
+       background-color: #283628;
+    }
+    
+   .horarios{
+       color: #fefae0;
+       font-family: 'Josefin Slab', serif;
+       font-size: 13px;
+       display: inline-block;
+       padding:1em;
+   
+   }
