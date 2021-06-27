@@ -32,22 +32,20 @@ jQuery(function($) {
         adjustNav();
   });
 
-  //Animaciones//
 
-let animado = document.querySelectorAll (".animado");
+//wow//
 
-function mostrarScroll() {
-      let scrollTop = document.documentElement.scrollTop;
-      for(var i=0; i< animado.length; i ++ ) {
-            let alturaAnimado = animado[i].offsetTop;
-            if( alturaAnimado - 500 < scrollTop) {
-                  animado[i].style.opacity = 1;
-                  animado[i].classList.add("mostrarArriba");
-            }
-      }
+new WOW().init();
 
+
+//boton arriba//
+
+$(document).ready(function(){ irArriba(); }); //Hacia arriba
+
+function irArriba(){
+  $('.ir-arriba').click(function(){ $('body,html').animate({ scrollTop:'0px' },1000); });
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 0){ $('.ir-arriba').slideDown(600); }else{ $('.ir-arriba').slideUp(600); }
+  });
+  $('.ir-abajo').click(function(){ $('body,html').animate({ scrollTop:'1000px' },1000); });
 }
-
-window. addEventListener ('scroll', mostrarScroll);
-
-//gallery

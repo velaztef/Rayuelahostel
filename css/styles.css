@@ -12,10 +12,10 @@ h2 {
 p {
   display: flex;
   justify-content: center;
-  align-content: flex-end;
+  align-content: center;
   color: #020202;
   font-family: 'Josefin Slab', serif;
-  font-size: 190%;
+  font-size: 1.3rem;
   line-height: 140%; }
 
 a {
@@ -27,11 +27,21 @@ a {
 .entry__tittle {
   font-family: 'Kristi', cursive; }
 
+.mainBox__tittle {
+  font-size: 2.5rem; }
+
+.turismo__tittle {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center; }
+
+@media screen and (min-width: 1025px) {
+  .mainBox__text {
+    padding-top: 4rem; } }
+
 /*MENU*/
 a:hover {
-  color: #87986a;
-  font-size: 28px;
-  transition: font-size 3s ease; }
+  color: #87986a; }
 
 nav ul li {
   list-style: none;
@@ -57,14 +67,14 @@ ul li:hover ul {
 
 /*CAJAS*/
 .mainBox {
-  padding: 3em;
+  padding: 1.5em;
   text-align: center;
   background-color: #f0efeb;
-  margin: 3em;
+  margin: 1.8em;
   justify-content: space-between; }
 
 .carousel-item {
-  height: 100vh;
+  width: 100%;
   min-height: 300px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -73,19 +83,27 @@ ul li:hover ul {
   background-size: cover; }
 
 .carousel-caption {
-  bottom: 270px; }
+  bottom: 50%;
+  background-color: grey;
+  opacity: 0.7;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%; }
 
 .carousel-caption h5 {
   font-size: 45px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-top: 25px; }
+  margin-top: 25px;
+  color: honeydew; }
 
 .carousel-caption p {
   width: 75%;
   margin: auto;
   font-size: 18px;
-  line-height: 1.9; }
+  line-height: 1.9;
+  color: honeydew;
+  text-align: center; }
 
 .button {
   display: inline-block;
@@ -252,12 +270,22 @@ ul li:hover ul {
 
 .header-area {
   position: relative;
-  height: 18vh;
+  height: 16vh;
   background-image: url("../mutimedia/fondo1.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repear;
   background-size: cover; }
+
+@media screen and (max-width: 992px) {
+  .header-area {
+    position: relative;
+    height: 12vh;
+    background-image: url("../mutimedia/fondo1.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repear;
+    background-size: cover; } }
 
 .banner {
   display: flex;
@@ -374,9 +402,9 @@ ul li:hover ul {
   width: 100%;
   height: auto; }
 
-/*GALERIA INICIO*/
+/*RESERVAS*/
 .footer-dark {
-  padding: 50px 0;
+  padding: 25px 0;
   color: #f0f9ff;
   background-color: #282d32; }
 
@@ -418,12 +446,13 @@ ul li:hover ul {
   margin-bottom: 0; }
 
 .footer-dark .item.social {
-  text-align: center; }
+  text-align: center;
+  margin-top: 35px; }
 
 @media (max-width: 991px) {
   .footer-dark .item.social {
     text-align: center;
-    margin-top: 20px; } }
+    margin-top: 35px; } }
 
 .footer-dark .item.social > a {
   font-size: 20px;
@@ -432,8 +461,6 @@ ul li:hover ul {
   line-height: 36px;
   display: inline-block;
   text-align: center;
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
   margin: 0 8px;
   color: #fff;
   opacity: 0.75; }
@@ -443,9 +470,8 @@ ul li:hover ul {
 
 .footer-dark .copyright {
   text-align: center;
-  padding-top: 24px;
-  opacity: 0.3;
-  font-size: 13px;
+  opacity: 0.9;
+  font-size: 1rem;
   margin-bottom: 0;
   color: #fff; }
 
@@ -453,7 +479,12 @@ ul li:hover ul {
   color: #fff; }
 
 .parrafo {
-  color: #fff; }
+  color: #fff;
+  font-size: 1.4rem; }
+
+@media (max-width: 767px) {
+  .parrafo {
+    text-align: center; } }
 
 .company {
   color: #fff; }
@@ -488,7 +519,7 @@ ul li:hover ul {
   min-height: 500px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -499,10 +530,14 @@ ul li:hover ul {
   font-weight: bold; }
 
 .parallax__text {
-  color: white; }
+  color: white;
+  text-align: center; }
 
 .justify-content-sm-center {
   justify-content: center; }
+
+.parallax__containerText {
+  width: 100%; }
 
 .row {
   display: flex;
@@ -514,6 +549,26 @@ ul li:hover ul {
   flex: 0 0 83.33333%;
   max-width: 83.33333%; }
 
+.parallax__nosotros {
+  background-image: url(../mutimedia/saladeestarparallax.jpg);
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.parallax__contacto {
+  background-image: url(../mutimedia/contactoparallax.png);
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .form__container {
   padding: 2rem; }
 
@@ -524,6 +579,127 @@ ul li:hover ul {
   padding: 0.2rem; }
 
 .form__inputSpace {
+  width: 100%; }
+
+/*FORMULARIO RESERVAS*/
+.reservas__container {
+  background-image: url(../mutimedia/reservas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+@media screen and (max-width: 580px) {
+  .reservas__container {
+    background-image: none; } }
+
+.section {
+  position: relative;
+  height: 100vh; }
+
+.section .section-center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+#booking {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.booking-form {
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(60, 64, 101, 0.1); }
+
+.booking-form > form .row.no-margin {
+  margin-right: 0px;
+  margin-left: 0px; }
+
+.booking-form > form .row.no-margin > [class*="col-"] {
+  padding-right: 0px;
+  padding-left: 0px; }
+
+.booking-form .form-header {
+  padding: 15px 10px;
+  height: 110px;
+  line-height: 110px;
+  text-align: center; }
+
+.booking-form .form-header h2 {
+  font-family: 'Alegreya', serif;
+  margin: 0;
+  display: inline-block;
+  font-size: 2.4rem;
+  color: #9a8067; }
+
+.booking-form .form-group {
+  position: relative;
+  height: 110px;
+  padding: 15px 10px;
+  margin-bottom: 0px; }
+
+.booking-form .form-control {
+  font-family: 'Alegreya', serif;
+  background-color: transparent;
+  border-radius: 0px;
+  border: none;
+  height: 50px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0;
+  font-size: 28px;
+  color: #3c404a;
+  font-weight: 700; }
+
+.booking-form select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.booking-form select.form-control + .select-arrow {
+  position: absolute;
+  right: 0px;
+  bottom: 20px;
+  width: 32px;
+  line-height: 32px;
+  height: 32px;
+  text-align: center;
+  pointer-events: none;
+  color: #818390;
+  font-size: 12px; }
+
+.booking-form select.form-control + .select-arrow:after {
+  content: '\279C';
+  display: block;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.booking-form .form-label {
+  color: #818390;
+  display: block;
+  font-weight: 400;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px; }
+
+.booking-form .form-btn {
+  padding: 15px 10px;
+  height: 110px; }
+
+.booking-form .submit-btn {
+  background: #9a8067;
+  color: #fff;
+  border: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: block;
+  height: 80px;
   width: 100%; }
 
 .section-md, .section-lg, .section-xl {
@@ -541,6 +717,10 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
+
+.reservas__text {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 *, *::before, *::after {
   box-sizing: border-box; }
@@ -1030,9 +1210,23 @@ h6 {
   100% {
     transform: translateY(0); } }
 
+.ir-arriba {
+  display: none;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2; }
+
 * {
   margin: 0%;
   padding: 0%; }
+
+html {
+  scroll-behavior: smooth; }
 
 body {
   background: color #fefae0;

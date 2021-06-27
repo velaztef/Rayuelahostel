@@ -8,7 +8,7 @@ min-height: 500px;
 
 /* Create the parallax scrolling effect */
 background-attachment: fixed;
-background-position: center;
+background-position: top;
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -24,10 +24,15 @@ background-size: cover;
 
 .parallax__text{
     color: white;
+    text-align: center;
 }
 
 .justify-content-sm-center{
     justify-content: center;
+}
+
+.parallax__containerText{
+  width: 100%;
 }
 
  .row {
@@ -40,4 +45,34 @@ background-size: cover;
 .col-md-10 {
         flex: 0 0 83.33333%;
         max-width: 83.33333%;
+}
+
+//nosotrxs//
+
+.parallax__nosotros{
+  background-image: url(../mutimedia/saladeestarparallax.jpg);
+
+  /* Set a specific height */
+min-height: 500px;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+//contacto//
+
+.parallax__contacto{
+  background-image: url(../mutimedia/contactoparallax.png);
+
+    /* Set a specific height */
+min-height: 500px;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }

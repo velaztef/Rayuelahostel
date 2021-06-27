@@ -114,13 +114,27 @@
 
   .header-area {
     position: relative;
-    height: 18vh;
+    height: 16vh;
     background-image: url("../mutimedia/fondo1.jpg");
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repear;
     background-size: cover;
   }
+
+  @media screen and (max-width: 992px) {
+    .header-area {
+      position: relative;
+      height: 12vh;
+      background-image: url("../mutimedia/fondo1.jpg");
+      background-attachment: fixed;
+      background-position: center center;
+      background-repeat: no-repear;
+      background-size: cover;
+    }
+  }
+
+
   .banner {
     display: flex;
     align-items: center;

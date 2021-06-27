@@ -11,11 +11,16 @@
 @import "rooms";
 @import "variables";
 @import "animaciones";
+@import "botón";
 *{
     margin: 0%;
     padding: 0%;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 body {
     background: color #fefae0;;
     line-height:1.5;
